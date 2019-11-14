@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'NanumBarunGothic';
+    src: url('../font/NanumBarunGothicBold.eot');
+    src: local('NanumBarunGothic Bold'), local('NanumBarunGothicBold'),
+        url('../font/NanumBarunGothicBold.eot?#iefix') format('embedded-opentype'),
+        url('../font/NanumBarunGothicBold.woff2') format('woff2'),
+        url('../font/NanumBarunGothicBold.woff') format('woff'),
+        url('../font/NanumBarunGothicBold.svg#NanumBarunGothicBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    src: url('../font/NanumBarunGothic.eot');
+    src: local('NanumBarunGothic'),
+        url('../font/NanumBarunGothic.eot?#iefix') format('embedded-opentype'),
+        url('../font/NanumBarunGothic.woff2') format('woff2'),
+        url('../font/NanumBarunGothic.woff') format('woff'),
+        url('../font/NanumBarunGothic.svg#NanumBarunGothic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GyeonggiTitleV';
+    src: url('../font/GyeonggiTitleV.woff2') format('woff2'),
+        url('../font/GyeonggiTitleV.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GyeonggiTitleM';
+    src: url('../font/GyeonggiTitleM.woff2') format('woff2'),
+        url('../font/GyeonggiTitleM.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GyeonggiTitleB';
+    src: url('../font/GyeonggiTitleB.woff2') format('woff2'),
+        url('../font/GyeonggiTitleB.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GyeonggiTitleL';
+    src: url('../font/GyeonggiTitleL.woff2') format('woff2'),
+        url('../font/GyeonggiTitleL.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+/* ========== [태그 초기화] ========== */
+* {margin:0; padding:0;}
+html, body {width:100%; height:100%}
+body {font-family:'NanumBarunGothic';font-weight:200;font-size:14px;color:#222;line-height:20px}
+div, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, button, abbr, acronym, address, code,del, dfn, em, img, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label,
+legend,table, caption, tbody, tfoot, thead, tr, th, td ,hr {margin:0; padding:0;font-family:'NanumBarunGothic';font-size:100%;font-weight:200;}
+header, footer, section, article, aside, nav, hgroup, details, menu, figure, figcaption {display:block;}
+h1, h2, h3, h4, h5, h6 {font-family:'NanumBarunGothic';font-weight:200;}
+ol, ul, li {list-style:none}
+table {width:100%; border-collapse:collapse;border-spacing:0;table-layout:fixed;}
+form, fieldset, iframe {display:block;border:0}
+img, button {border:0 none;vertical-align:middle;}
+img {width: 100%;}
+hr {height:0; display:none}
+i, em, address{font-style:normal}
+label, button{cursor:pointer}
+blockquote, q {quotes:none}
+caption {visibility:hidden;width:0;height:0;padding:0;margin:0;font-size:0;}
+legend {overflow:hidden;visibility:hidden;position:absolute;width:0;height:0;padding:0;margin:0;font-size:0;text-indent:-100%;white-space:nowrap;z-index:-1}
+.ellipsis {display:block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+input, textarea, select, button {font-family:'NanumBarunGothic';font-weight:200;font-size:14px;letter-spacing:0;color:#222;vertical-align:middle}
+button {background: transparent; cursor: pointer;}
+a {color:#222;text-decoration:none;}
+a.nolink {cursor:default;}
+a:link, a:visited {text-decoration:none}
+#skip-nav {position: fixed; top: -40px; left: 0; width: 100%; line-height: 40px; text-align: center; font-size: 17px; color: #fff; background: rgba(0, 0, 0, 0.5); z-index: 10000; transition: 0.3s;}
+#skip-nav:focus {top: 0;}
+#wrapper {width: 100%; overflow: hidden;}
+.mobile {display: none;}
+.sound_only {overflow: hidden; width: 1px; height: 1px; font-size: 0; line-height: 0;}
+.clear {clear:both;}
+.clear:after {clear:both; content:""; display: block;}
+.ir {
+    display: inline-block;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: url('') no-repeat;
+}

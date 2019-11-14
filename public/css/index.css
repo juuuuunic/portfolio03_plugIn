@@ -1,0 +1,204 @@
+@import 'basic.css';
+
+#main {position: relative; width:100%; height:100%;}
+
+
+/***************************************
+                #header
+ ***************************************/
+#header > .nav {position: fixed; top: 40px; left: 40px; width: 50px; height: 50px; background: #fff; border-radius: 50px; z-index: 300; cursor: pointer;}
+#header > .nav .fa {font-size: 25px;}
+#header > #gnbs {position: fixed; top: 30px; left: -100%; width: 43%; height: calc(100% - 60px); box-sizing: border-box; background: #cacaca; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; z-index: 10;}
+#header > #gnbs > div {padding: 120px 18%;}
+#header > #gnbs .gnb {display: block; font-size: 30px; font-weight: bold; line-height: 70px; cursor: pointer;}
+.nav .bar {
+    position: absolute;
+    display: inline-block;
+    width: 55%;
+    height: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    background: #222;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+.nav .bar1 {top: 17px;}
+.nav .bar2 {top: 50%; transform: translate(-50%, -50%);}
+.nav .bar3 {bottom: 17px;}
+.nav:hover .bar1 {transform: translate(-50%, -1px);}
+.nav:hover .bar3 {transform: translate(-50%, 1px);}
+.nav.active .bar1 {transform: translateX(-50%) translateY(7px) rotate(45deg) !important;}
+.nav.active .bar2 {opacity: 0;}
+.nav.active .bar3 {transform: translateX(-50%) translateY(-7px) rotate(-45deg) !important;}
+
+@media screen and (max-width: 960px) {
+    #header > #gnbs {width: 50%;}
+    #header > #gnbs > div {padding: 80px 18%;}
+    #header > #gnbs .gnb {font-size: 22px; line-height: 40px;}
+}
+@media screen and (max-width: 640px) {
+    #header > #gnbs {width: 80%;}
+    #header > .nav {top: 20px; left: 20px; width: 40px; height: 40px;}
+    .nav .bar1 {top: 14px;}
+    .nav .bar3 {bottom: 14px;}
+    .nav.active .bar1 {transform: translateX(-50%) translateY(5px) rotate(-45deg) !important;}
+    .nav.active .bar3 {transform: translateX(-50%) translateY(-5px) rotate(-45deg) !important;}
+}
+
+/***************************************
+                .wrap
+ ***************************************/
+.wrap {position: relative; width:100%; height:100%;}
+.wrap > a.top {
+    position: fixed; 
+    bottom: 30px; 
+    right: 30px; 
+    width: 40px; 
+    height: 40px; 
+    border-radius: 40px; 
+    background: #fff;
+    cursor: pointer; 
+    z-index: 100;
+    opacity: 0;
+    
+}
+
+.wrap > a.top.show {animation: topShow 0.5s forwards;}
+.wrap > a.top.hide {animation: topHide 0.5s forwards;}
+
+@keyframes topShow {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes topHide {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+.wrap > a.top > p {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+
+.wrap > .fixedBox {position: fixed; top: 30px; left: 30px; width: 43%; height: calc(100% - 60px); background: rgba(0, 0, 0, 0.3); z-index: 3;}
+.wrap > .fixedBox > span {position: absolute; bottom: 5px; left: 10px; font-size: 12px; font-weight: 100; cursor: pointer;}
+
+.page {position: relative; width:100%; height:100%; background-size: cover !important;}
+.page > .pageFix {display: none; position: relative; top: 30px; left: 30px; width: 43%; height: calc(100% - 60px); z-index: 3;}
+.page > div.firstup,.page > div.up, .page > div.down {display: block;}
+
+.page > .pageFix .subject {position: relative; font-size: 17px; margin-bottom: 10px;}
+.page > .pageFix > .detail {position: absolute; width: 57%; bottom: 17%; right: 70px; z-index: 5;}
+.page > div.down div.detail {animation: down 0.5s forwards;}
+.page > div.up div.detail {animation: up 0.5s forwards;}
+.page > div.firstup div.detail {animation: up 0.5s forwards;}
+.page > div.hide-down div.detail {animation: hide-up 0.3s forwards;}
+.page > div.hide-up div.detail {animation: hide-down 0.3s forwards;}
+
+@keyframes up {
+    0% {opacity: 0; transform: translateY(350px);}
+    100% {opacity: 1; transform: translateY(0);}
+}
+@keyframes down {
+    0% {opacity: 0; transform: translateY(-350px);}
+    100% {opacity: 1; transform: translateY(0);}
+}
+@keyframes hide-up {
+    0% {opacity: 1; transform: translateY(0);}
+    50% {opacity: 0; transform: translateY(-350px);}
+}
+@keyframes hide-down {
+    0% {opacity: 1; transform: translateY(0);}
+    50% {opacity: 0; transform: translateY(350px);}
+}
+
+.page .pageFix .title span {font-family: 'GyeonggiTitleL'; display: block; font-size: 60px; font-weight: bold; line-height: 66px;}
+.page .pageFix .title span > br {display: none;}
+.page .pageFix h3.subTitle {font-family: 'GyeonggiTitleL'; font-size: 25px; font-weight: bold; margin-top: 8px;}
+.page .pageFix > .detail .deTxt {padding: 18px 0;}
+.page .pageFix > .detail .deTxt > li {font-size: 16px; line-height: 28px; word-break: keep-all;}
+.page .pageFix > .detail .buttWrap {width: 100%;}
+.page .pageFix > .detail .buttWrap > a {
+    position: relative;
+    display: inline-block; 
+    width: 48%; 
+    font-size: 14px; 
+    font-weight: 700; 
+    line-height: 45px; 
+    text-align: center;
+    margin-bottom: 8px;
+    border: 1px solid #222;
+    background-color: none;
+    z-index: 1;
+}
+.page .pageFix > .detail .buttWrap > a:nth-child(even) {margin-left: 2%;}
+/* .page .pageFix > .detail .buttWrap > a:after {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background-color: #222;
+    z-index: -1;
+} */
+.page .pageFix > .detail .buttWrap > a:hover {background-color: #222; color: #fff;;}
+/* .page .pageFix > .detail .buttWrap > a:hover:after {width: 100%;} */
+.page .portImg {position: absolute; width: 45%; min-width: 250px; top: 50%; right: 8%; transform: translateY(-50%);  z-index: 3;}
+.page .portImg > img {box-shadow: 30px 40px 40px rgba(0, 0, 0, 0.6);}
+
+#page1 {background: url(../img/index/bg-00.jpg) no-repeat;}
+#page1 .pageFix > .detail {position: absolute; top: 40%; left: 32%;}
+#page1 .pageFix .title span {font-size: 80px; line-height: 88px;}
+#page1 .pageFix h3.subTitle {font-size: 18px; font-weight: 100; margin-top: 8px;}
+#page2 {background: url(../img/index/bg-01.jpg) no-repeat;}
+#page3 {background: url(../img/index/bg-02.jpg) no-repeat;}
+#page4 {background: url(../img/index/bg-03.jpg) no-repeat;}
+#page5 {background: url(../img/index/bg-04.jpg) no-repeat;}
+#page6 {background: url(../img/index/bg-05.jpg) no-repeat;}
+#page7 {background: url(../img/index/bg-06.jpg) no-repeat;}
+#page7 .deTxt > li span {display: inline-block;; width: 80px;}
+
+
+@media screen and (max-width: 960px) {
+
+    .wrap > .fixedBox {    
+        top: auto;
+        bottom: 30px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 80%;
+        height: 42%;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+    }
+    .page > .pageFix {position: absolute; width: 80%; height: 42%; left: 50%; top: auto; bottom: 30px; transform: translateX(-50%);}
+    .page > .pageFix > .detail {position: absolute; width: 100%; height: 100%; top: 0; left: 0; padding: 10px 30px; z-index: 5;}
+    .page .portImg {top: 10%; left: 50%; right: auto; transform: translate(-50%, -10%);}
+    .page .pageFix .title span {display: inline; font-size: 32px; line-height: 40px;}
+    .page .pageFix h3.subTitle {font-size: 18px; margin-bottom: 8px;}
+    .page .pageFix > .detail .deTxt {padding: 10px; overflow: hidden;}
+    .page .pageFix > .detail .deTxt > li {margin-right: 20px;}
+
+    #page1 .pageFix > .detail {top: 0; left: 0;}
+    #page1 .pageFix .title span {font-size: 40px; line-height: 55px;}
+    #page1 .pageFix .title em {display: block; color: #fff;}
+}
+
+@media screen and (max-width: 800px) {
+    .page:not(:last-child) .pageFix > .detail .deTxt {display: none;}
+    
+}
+@media screen and (max-width: 640px) {
+    .page .pageFix .title span {display: block;}
+
+    
+}
+@media screen and (max-width: 480px) {
+    #page1 .pageFix .title span {font-size: 30px; line-height: 40px;}
+    .page .pageFix > .detail .deTxt > li {float: none;}
+    #page7 .deTxt > li span {display: none;}
+}
