@@ -61,7 +61,7 @@ html, body {width:100%; height:100%}
 body {font-family:'NanumBarunGothic';font-weight:200;font-size:14px;color:#222;line-height:20px}
 div, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, button, abbr, acronym, address, code,del, dfn, em, img, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label,
-legend,table, caption, tbody, tfoot, thead, tr, th, td ,hr {margin:0; padding:0;font-family:'NanumBarunGothic';font-size:100%;font-weight:200;}
+legend,table, caption, tbody, tfoot, thead, tr, th, td ,hr {margin:0; padding:0;font-family:'GyeonggiTitleL';font-size:100%;font-weight:200;}
 header, footer, section, article, aside, nav, hgroup, details, menu, figure, figcaption {display:block;}
 h1, h2, h3, h4, h5, h6 {font-family:'NanumBarunGothic';font-weight:200;}
 ol, ul, li {list-style:none}
@@ -88,10 +88,3 @@ a:link, a:visited {text-decoration:none}
 .sound_only {overflow: hidden; width: 1px; height: 1px; font-size: 0; line-height: 0;}
 .clear {clear:both;}
 .clear:after {clear:both; content:""; display: block;}
-.ir {
-    display: inline-block;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    background: url('') no-repeat;
-}

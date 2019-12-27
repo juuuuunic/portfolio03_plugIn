@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="ko">
 <head>
 	<meta charset="utf-8">
@@ -13,11 +12,6 @@
 
 	<title>이준희 포트폴리오 사이트입니다.</title>
 	
-	<!--[if (gte IE 8)&(lte IE 9)]>
-	<script type="text/javascript" src="./js/selectivizr.js"></script>
-	<script type="text/javascript" src="./js/html5shiv.js"></script>
-	<![endif]-->
-	
 	<!-- w3 -->
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<!-- favicon -->
@@ -25,216 +19,236 @@
 	<!-- css -->
 	<link rel="stylesheet" href="../css/basic.css">
 	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/fullpage.css">
 	<!-- jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/fullpage.js"></script>
 	<script type="text/javascript" src="../js/prefixfree.min.js"></script>
-	<script type="text/javascript" src="../js/selectivizr-min.js"></script>
+    <script type="text/javascript" src="../js/html5shiv.js"></script>
+
+    <!--[if (gte IE 8)&(lte IE 9)]>
+	<script type="text/javascript" src="../js/html5shiv.js"></script>
+	<![endif]-->
+	
 
 </head>
+
 <body id="main">
-	<a href="#main" id="skip-nav" class="sound_only">본문 바로가기</a>
+    <a href="#main" id="skip-nav" class="sound_only">본문 바로가기</a>
+
+    <!-- header -->
 	<header id="header">
-		<a class="nav">
+		<a class="bars">
 			<span class="sound_only">메뉴 열기/닫기</span>
 			<span class="bar bar1"></span>
 			<span class="bar bar2"></span>
 			<span class="bar bar3"></span>
 		</a>
-		<nav id="gnbs">
+		<div id="gnbs">
 			<div>
-				<a class="gnb" data-now="0">HOME</a>
-				<a class="gnb" data-now="1">DOKK-BAT</a>
-				<a class="gnb" data-now="2">DOKK-MALL</a>
-				<a class="gnb" data-now="3">DIGITAL ARCHIVE</a>
-				<a class="gnb" data-now="4">KELLOGG</a>
-				<a class="gnb" data-now="5">ADMIN</a>
-				<a class="gnb" data-now="6">INTRODUCE</a>
+				<li class="gnb" data-menuanchor="1st"><a href="#1st" title="home">HOME</a></li>
+				<li class="gnb" data-menuanchor="2nd"><a href="#2nd" title="port01">DOKK-BAT</a></li>
+				<li class="gnb" data-menuanchor="3th"><a href="#3th" title="port02">DOKK-MALL</a></li>
+				<li class="gnb" data-menuanchor="4th"><a href="#4th" title="port03">DIGITAL ARCHIVE</a></li>
+				<li class="gnb" data-menuanchor="5th"><a href="#5th" title="port04">KELLOGG</a></li>
+				<li class="gnb" data-menuanchor="6th"><a href="#6th" title="port05">ADMIN</a></li>
+				<li class="gnb" data-menuanchor="7th"><a href="#7th" title="introduce">INTRODUCE</a></li>
 			</div>
-			
-		</nav>
+		</div>
 	</header>
-	<div class="wrap">
-		<a class="top gnb" data-now="0"><p>&and;</p></a>
-		<div class="fixedBox">
-			<span>juuuuunic@gmail.com</span>
-		</div>
+	<!-- //header -->
 
-		<!-- page -->
-		<div class="page" id="page1">
-			<div class="pageFix">
-				<div class="title detail">
-					<h5 class="subject">- INTRO -</h5>
-					<h1>
-						<span>LEE <br/>JUNHEE</span>
-						<span>PORTFOLIO</span>
-					</h1>
-					<h3 class="subTitle">안녕하세요. <em>웹퍼블리셔 이준희의 개인 포트폴리오 사이트입니다.</em></h3>
-				</div>
-			</div>
-		</div>
-		<div class="page" id="page2">
-			<div class="pageFix">
-				<div class="detail">
-					<h5 class="subject">- PORTFOLIO #01 -</h5>
-					<h1 class="title">
-						<span>주식회사</span> 
-						<span>도깨비방망이</span>
-					</h1>
-					<h3 class="subTitle">PC WEBSITE</h3>
-					<ul class="deTxt">
-						<li>반응형 웹사이트</li>
-						<li>디자인 50% / 퍼블리싱 100%</li>
-						<li>Main Page</li>
-						<li>(주)도깨비방망이 공식사이트, 스크롤 이펙트, fullpage.js 플러그인 사용</li>
-					</ul>
-					<div class="buttWrap">
-						<a href="http://dokk-bat.com/" target="_blank">VIEW WEPSITE</a>
-						<a href="https://github.com/juuuuunic/dokk-bat" target="_blank">VIEW CODE</a>
-					</div>
-				</div>
-			</div>
-			<div class="portImg">
-				<img src="../img/index/port-01.jpg" alt="포트폴리오 도깨비방망이"/>
-			</div>
-		</div>
-		<div class="page" id="page3">
-			<div class="pageFix">
-				<div class="detail">
-					<h5 class="subject">- PORTFOLIO #02 -</h5>
-					<h1 class="title">
-						<span>도깨비몰</span>
-					</h1>
-					<h3 class="subTitle">PC WEBSITE</h3>
-					<ul class="deTxt">
-						<li>PC 웹 사이트</li>
-						<li>디자인 80% / 퍼블리싱 100%</li>
-						<li>Main Page, Sub Page1, Sub Page2</li>
-						<li>(주)도깨비방망이 쇼핑몰 사이트, 제품 미니 슬라이드</li>
-					</ul>
-					<div class="buttWrap">
-						<a href="https://subb-dokkmall.firebaseapp.com/" target="_blank">VIEW WEPSITE</a>
-						<a href="https://subb-dokkmall.firebaseapp.com/sub/sub01.html" target="_blank">VIEW SUB1</a>
-						<a href="https://subb-dokkmall.firebaseapp.com/sub/sub01_a.html" target="_blank">VIEW SUB2</a>
-						<a href="https://github.com/juuuuunic/dokk-mall/tree/master/public" target="_blank">VIEW CODE</a>
-					</div>
-				</div>
-			</div>
-			<div class="portImg">
-				<img src="../img/index/port-02.png" alt="포트폴리오 도깨비몰"/>
-			</div>
-		</div>
-		<div class="page" id="page4">
-			<div class="pageFix">
-				<div class="detail">
-					<h5 class="subject">- PORTFOLIO #03 -</h5>
-					<h1 class="title">
-						<span>백제역사유적지구</span>
-						<span>DGITAL ARCHIVE</span>
-					</h1>
-					<h3 class="subTitle">RESPONSIVE WEBSITE</h3>
-					<ul class="deTxt">
-						<li>반응형 웹</li>
-						<li>퍼블리싱 100%</li>
-						<li>Main Page</li>
-						<li>카운팅 이벤트, 페이드 배너, 슬라이드 타임라인</li>
-					</ul>
-					<div class="buttWrap">
-						<a href="https://subb-digitalarchive.firebaseapp.com" target="_blank">VIEW WEPSITE</a>
-						<a href="https://github.com/juuuuunic/digital-archive/tree/master/public" target="_blank">VIEW CODE</a>
-					</div>
-				</div>
-			</div>
-			<div class="portImg">
-				<img src="../img/index/port-03.png" alt="포트폴리오 백제역사유적지구"/>
-			</div>
-		</div>
-		<div class="page" id="page5">
-			<div class="pageFix">
-				<div class="detail">
-					<h5 class="subject">- PORTFOLIO #04 -</h5>
-					<h1 class="title">
-						<span>KELLOGG'S</span>
-					</h1>
-					<h3 class="subTitle">PC WEBSITE</h3>
-					<ul class="deTxt">
-						<li>반응형 웹</li>
-						<li>디자인 90% / 퍼블리싱 100%</li>
-						<li>Main Page</li>
-						<li>박스형 디자인, 커서 이벤트, 반응형 배너 슬라이드, 유튜브</li>
-					</ul>
-					<div class="buttWrap">
-						<a href="https://subb-kellogg-admin.firebaseapp.com/" target="_blank">VIEW WEPSITE</a>
-						<a href="https://github.com/juuuuunic/kellogg-admin/tree/master/public" target="_blank">VIEW CODE</a>
-					</div>
-				</div>
-			</div>
-			<div class="portImg">
-				<img src="../img/index/port-04.png" alt="포트폴리오 켈로그"/>
-			</div>
-		</div>
-		<div class="page" id="page6">
-			<div class="pageFix">
-				<div class="detail">
-					<h5 class="subject">- PORTFOLIO #05 -</h5>
-					<h1 class="title">
-						<span>ADMIN</span>
-					</h1>
-					<h3 class="subTitle">PC WEBSITE</h3>
-					<ul class="deTxt">
-						<li>PC형 웹사이트</li>
-						<li>디자인 90% / 퍼블리싱 100%</li>
-						<li>Main Page</li>
-						<li>firebase DB를 이용한 켈로그 홈페이지 메뉴 추가/삭제 </li>
-					</ul>
-					<div class="buttWrap">
-						<a href="https://subb-kellogg-admin.firebaseapp.com/admin/admin.html" target="_blank">VIEW WEPSITE</a>
-						<a href="https://github.com/juuuuunic/kellogg-admin/tree/master/public" target="_blank">VIEW CODE</a>
-					</div>
-				</div>
-			</div>
-			<div class="portImg">
-				<img src="../img/index/port-05.png" alt="포트폴리오 어드민"/>
-			</div>
-		</div>
-		<div class="page" id="page7">
-			<div class="pageFix">
-				<div class="detail">
-					<h5 class="subject">- PROFILE -</h5>
-					<h1 class="title">
-						<span>Thank You</span>
-					</h1>
-					<ul class="deTxt">
-						<li>
-							<span>NAME/</span>
-							이준희
-						</li>
-						<li>
-							<span>ADRESS/</span>
-							인천광역시 계양구
-						</li>
-						<li>
-							<span>EMAIL/</span>
-							<a href="">juuuuunic@gmail.com</a>
-						</li>
-						<li>
-							<span>GITHUB/</span>
-							<a href="https://github.com/juuuuunic">github.com/juuuuunic</a>
-						</li>
-					</ul>
-				</div>
+	<!-- contents -->
+	<div class="contents">
+		<!-- index -->
+		<div id="index" class="fixed-cont">
+			<div class="detail">
+				<h5 class="subject">- INTRO -</h5>
+				<h1 class="title">
+					<span>LEE <br/>JUNHEE</span>
+					<span>PORTFOLIO</span>
+				</h1>
+				<h3 class="subTitle">안녕하세요. <em>웹퍼블리셔 이준희의 개인 포트폴리오 사이트입니다.</em></h3>
 			</div>
 		</div>
 
+		<!-- portfolio -->
+		<div id="sec02" class="fixed-cont">
+			<div class="detail">
+				<h5 class="subject">- PORTFOLIO #01 -</h5>
+				<h1 class="title">
+					<span>주식회사</span> 
+					<span>도깨비방망이</span>
+				</h1>
+				<h3 class="subTitle">PC WEBSITE</h3>
+				<ul class="deTxt">
+					<li>반응형 웹사이트</li>
+					<li>디자인 50% / 퍼블리싱 100%</li>
+					<li>Main Page</li>
+					<li>(주)도깨비방망이 공식사이트, 스크롤 이펙트, fullpage.js 플러그인 사용</li>
+				</ul>
+				<div class="buttWrap">
+					<a href="https://subb-dokkbat.firebaseapp.com" target="_blank">VIEW WEPSITE</a>
+					<a href="https://github.com/juuuuunic/dokk-bat" target="_blank">VIEW CODE</a>
+				</div>
+			</div>
+		</div>
+		<div id="sec03" class="fixed-cont">
+			<div class="detail">
+				<h5 class="subject">- PORTFOLIO #02 -</h5>
+				<h1 class="title">
+					<span>도깨비몰</span>
+				</h1>
+				<h3 class="subTitle">PC WEBSITE</h3>
+				<ul class="deTxt">
+					<li>PC 웹 사이트</li>
+					<li>디자인 80% / 퍼블리싱 100%</li>
+					<li>Main Page, Sub Page1, Sub Page2</li>
+					<li>(주)도깨비방망이 쇼핑몰 사이트, 제품 미니 슬라이드</li>
+				</ul>
+				<div class="buttWrap">
+					<a href="https://subb-dokkmall.firebaseapp.com/" target="_blank">VIEW WEPSITE</a>
+					<a href="https://subb-dokkmall.firebaseapp.com/sub/sub01.html" target="_blank">VIEW SUB1</a>
+					<a href="https://subb-dokkmall.firebaseapp.com/sub/sub01_a.html" target="_blank">VIEW SUB2</a>
+					<a href="https://github.com/juuuuunic/dokk-mall/tree/master/public" target="_blank">VIEW CODE</a>
+				</div>
+			</div>
+		</div>
+		<div id="sec04" class="fixed-cont">
+			<div class="detail">
+				<h5 class="subject">- PORTFOLIO #03 -</h5>
+				<h1 class="title">
+					<span>백제역사유적지구</span>
+					<span>DGITAL ARCHIVE</span>
+				</h1>
+				<h3 class="subTitle">RESPONSIVE WEBSITE</h3>
+				<ul class="deTxt">
+					<li>반응형 웹</li>
+					<li>퍼블리싱 100%</li>
+					<li>Main Page</li>
+					<li>카운팅 이벤트, 페이드 배너, 슬라이드 타임라인</li>
+				</ul>
+				<div class="buttWrap">
+					<a href="https://subb-digitalarchive.firebaseapp.com" target="_blank">VIEW WEPSITE</a>
+					<a href="https://github.com/juuuuunic/digital-archive/tree/master/public" target="_blank">VIEW CODE</a>
+				</div>
+			</div>
+		</div>
+		<div id="sec05" class="fixed-cont">
+			<div class="detail">
+				<h5 class="subject">- PORTFOLIO #04 -</h5>
+				<h1 class="title">
+					<span>KELLOGG'S</span>
+				</h1>
+				<h3 class="subTitle">PC WEBSITE</h3>
+				<ul class="deTxt">
+					<li>반응형 웹</li>
+					<li>디자인 90% / 퍼블리싱 100%</li>
+					<li>Main Page</li>
+					<li>박스형 디자인, 커서 이벤트, 반응형 배너 슬라이드, 유튜브</li>
+				</ul>
+				<div class="buttWrap">
+					<a href="https://subb-kellogg-admin.firebaseapp.com/" target="_blank">VIEW WEPSITE</a>
+					<a href="https://github.com/juuuuunic/kellogg-admin/tree/master/public" target="_blank">VIEW CODE</a>
+				</div>
+			</div>
+		</div>
+		<div id="sec06" class="fixed-cont">
+			<div class="detail">
+				<h5 class="subject">- PORTFOLIO #05 -</h5>
+				<h1 class="title">
+					<span>ADMIN</span>
+				</h1>
+				<h3 class="subTitle">PC WEBSITE</h3>
+				<ul class="deTxt">
+					<li>PC형 웹사이트</li>
+					<li>디자인 90% / 퍼블리싱 100%</li>
+					<li>Main Page</li>
+					<li>firebase DB를 이용한 켈로그 홈페이지 메뉴 추가/삭제 </li>
+				</ul>
+				<div class="buttWrap">
+					<a href="https://subb-kellogg-admin.firebaseapp.com/admin/admin.html" target="_blank">VIEW WEPSITE</a>
+					<a href="https://github.com/juuuuunic/kellogg-admin/tree/master/public" target="_blank">VIEW CODE</a>
+				</div>
+			</div>
+		</div>
+		<!-- //portfolio -->
+
+		<!-- footer -->
+		<div id="footer" class="fixed-cont">
+			<div class="detail">
+				<h5 class="subject">- PROFILE -</h5>
+				<h1 class="title">
+					<span>Thank You</span>
+				</h1>
+				<ul class="deTxt">
+					<li>
+						<span>NAME/</span>
+						이준희
+					</li>
+					<li>
+						<span>ADRESS/</span>
+						인천광역시 계양구
+					</li>
+					<li>
+						<span>EMAIL/</span>
+						<a href="">juuuuunic@gmail.com</a>
+					</li>
+					<li>
+						<span>GITHUB/</span>
+						<a href="https://github.com/juuuuunic">github.com/juuuuunic</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</div>
-	
-<script type="text/javascript" src="../js/index.js"></script>
-<script>
-	var pages = new WheelScroll({
-		page: ".page",
-		nav: ".gnb", 
-		speed: 500
-	});
-</script>
+	<!-- //contents -->
 
-</body>
-</html>
+	<!-- background --> 
+	<div id="fullpage" class="background">
+
+		<!-- index -->
+		<div class="scroll_page fp-section">
+		</div>
+
+		<!-- portfolio -->
+		<div class="scroll_page fp-section">
+			<div class="portImg">
+				<img src="../img/port/port01.jpg" alt="포트폴리오 도깨비방망이"/>
+			</div>
+		</div>
+		<div class="scroll_page fp-section">
+			<div class="portImg">
+				<img src="../img/port/port02.png" alt="포트폴리오 도깨비몰"/>
+			</div>
+		</div>
+		<div class="scroll_page fp-section">
+			<div class="portImg">
+				<img src="../img/port/port03.png" alt="포트폴리오 백제역사유적지구"/>
+			</div>
+		</div>
+		<div class="scroll_page fp-section">
+			<div class="portImg">
+				<img src="../img/port/port04.png" alt="포트폴리오 켈로그"/>
+			</div>
+		</div>
+		<div class="scroll_page fp-section">
+				<div class="portImg">
+					<img src="../img/port/port05.png" alt="포트폴리오 어드민"/>
+				</div>
+		</div>
+		<!-- //portfolio -->
+
+		<!-- footer -->
+		<div class="scroll_page fp-section">
+		</div>
+		
+	</div>
+	<!-- //background -->
+
+	
+	
+
+    <script type="text/javascript" src="../js/index.js"></script>
+  </body>
+</html> 
