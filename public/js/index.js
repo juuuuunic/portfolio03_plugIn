@@ -53,7 +53,6 @@ $(document).ready(function(){
 
 			interval = setInterval(up_slides, 2500);
 			interval2 = setInterval(down_slides, 2500);
-			interval2 = setInterval(one_slides, 2500);
         }
 			
 	}); 
@@ -79,7 +78,6 @@ $(document).ready(function(){
 	// slide
 	var n = 1;
 	var length = $('#up_slides > li').length;
-	var length2 = $('#one_slides > li').length;
 
 	//up_slides
 	var interval;
@@ -116,24 +114,5 @@ $(document).ready(function(){
 	}, function(){
 		interval2 = setInterval(down_slides, 2500);
 	});
-
-	//one_slides
-	var n3 = 1;
-	var interval3;
-	function one_slides() {
-		$("#one_slides").stop().animate({"left":-(n3*100)+"%"}, 700, function(){
-			if(n3 == length2-1) {
-				n3 = 0;
-				$(this).css({"left":0});
-			}
-			n3++;
-		});
-	}
-	$("#one_slides").hover(function(){
-		clearInterval(interval3);
-	}, function(){
-		interval3 = setInterval(one_slides, 2500);
-	});
-
 
 });
